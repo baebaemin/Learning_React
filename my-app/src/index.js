@@ -16,10 +16,11 @@ import Calculator from './chapter_12/Calculator';
 import ProfileCard from './chapter_13/ProfileCafrd';
 import DarkOrLight from './chapter_14/DarkOrLight';
 import Blocks from './chapter_15/Blocks';
+import InputSample from './temp';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Blocks />
+    <InputSample />
   </React.StrictMode>,
   document.getElementById('root')
 );
