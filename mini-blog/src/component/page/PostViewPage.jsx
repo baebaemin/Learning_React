@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import styled from "styled-components"
 import CommentList from "../list/CommentList"
@@ -49,13 +49,13 @@ const CommentLabel = styled.p`
 `;
 
 function PostViewPage(props) {
-    const navigate = useNavigate();
-    const { postId } = useParams();
+    const navigate = useNavigate(); 
+    const { postId } = useParams(); // URL에 있는 params를 쓰겠다
 
     const post = data.find((item) => {
         return item.id == postId;
     });
-
+    console.log(post)
     const [comment, setComment] = useState("");
 
     return (
@@ -92,3 +92,5 @@ function PostViewPage(props) {
         </Wrapper>
     );
 }
+
+export default PostViewPage;

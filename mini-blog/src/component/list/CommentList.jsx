@@ -27,4 +27,4 @@ function CommentList(props) {
     );
 }
 
-export default PostList;
+export default CommentList;
