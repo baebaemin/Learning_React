@@ -43,7 +43,7 @@ const ContentText = styled.p`
     white-space: pre-wrap;
 `;
 
-const ConmmentLabl = styled.p`
+const CommentLabel = styled.p`
     font-size: 16px;
     font-weight: 500;
 `;
@@ -69,7 +69,7 @@ function PostViewPage(props) {
                 />
                 <PostContainer>
                     <TitleText>{post.title}</TitleText>
-                    <ContentText>{}</ContentText>
+                    <ContentText>{post.content}</ContentText>
                 </PostContainer>
 
                 <CommentLabel>댓글</CommentLabel>
